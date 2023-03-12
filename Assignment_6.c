@@ -161,7 +161,61 @@ int main(){
 }
 
 8. Write a program to check whether a given number is a Prime number or not
+
+9. Write a program to calculate LCM of two numbers
+
+
+#include<stdio.h>
+
+int main(){
+
+    printf("Enter the to numbers whose LCM you want to get\nFirst no :");
+    int a,b;
+    scanf("%d",& a);
+    printf("Second no :");
+    scanf("%d",& b);
+
+    int divi1,divi2,devi,r1,r2,q1,q2,p=1;
+    
+
+    divi1=a;
+    divi2=b;
+
+    for (int i = 2; (q1=1) && (q2=1) ; i++)
+    {
+        devi=i;
+        r1=divi1 % devi;
+        r2=divi2 % devi;
+        if (r1==0)
+        {
+            q1=divi1/devi;
+            divi1=q1;
+           
+        }
+        if (r2==0)
+        {
+            q2=divi2/devi;
+            divi2=q2;
+            
+        }
+
+        p=p*devi;
+        
+        printf("value of i:%d \n",i);
+
+    }
+    
+    printf("LCM of %d & %d is : %d\n",a,b,p);
+    return 0;
+
+}
+
+
+10. Write a program to reverse a given number
+
 */
+
+
 
 
 
